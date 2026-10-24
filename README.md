@@ -1,7 +1,17 @@
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/hero-dark.svg">
-  <img src="assets/hero-light.svg" alt="Soumadip Patra — open source organization map" width="100%">
+  <img src="assets/hero-light.svg" alt="Soumadip Patra" width="100%">
 </picture>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/orgs-dark.svg">
+  <img src="assets/orgs-light.svg" alt="Open source organization contributions" width="100%">
+</picture>
+
+<br>
+
+<!-- Activity overview (auto-updated daily by GitHub Actions) -->
+<img src="assets/activity.svg" alt="Open source activity overview" width="100%">
 
 <br>
 

@@ -1,0 +1,95 @@
+<svg viewBox="0 0 900 200" xmlns="http://www.w3.org/2000/svg" width="900" height="200">
+  <defs>
+    <style>
+      @keyframes fadeEdge {
+        0%, 100% { opacity: 0.45; }
+        50%       { opacity: 0.7; }
+      }
+      .edge { animation: fadeEdge 4s ease-in-out infinite; }
+    </style>
+    <pattern id="dp" x="0" y="0" width="14" height="14" patternUnits="userSpaceOnUse">
+      <circle cx="1" cy="1" r="0.6" fill="#1A1A2E" opacity="0.5"/>
+    </pattern>
+  </defs>
+
+  <!-- Background -->
+  <rect width="900" height="200" fill="#060810"/>
+  <rect width="900" height="200" fill="url(#dp)"/>
+
+  <!-- Section label: CNCF -->
+  <text x="24" y="22"
+    font-family="'IBM Plex Mono','SFMono-Regular',Consolas,monospace"
+    font-size="9" fill="#3B82F6" letter-spacing="1.8">CNCF · KUBERNETES ECOSYSTEM</text>
+
+  <!-- CNCF cluster background -->
+  <rect x="20" y="30" width="295" height="112" rx="4"
+    fill="#080C1C" stroke="#1C3A6E" stroke-width="1"/>
+
+  <!-- Org nodes Row 1 -->
+  <rect x="28" y="40" width="118" height="24" rx="3" fill="#0D1B2E" stroke="#2563EB" stroke-width="0.8"/>
+  <text x="87" y="56" text-anchor="middle"
+    font-family="'IBM Plex Mono',monospace" font-size="10" font-weight="600" fill="#93C5FD">Kubeflow</text>
+
+  <rect x="162" y="40" width="118" height="24" rx="3" fill="#0D1B2E" stroke="#2563EB" stroke-width="0.8"/>
+  <text x="221" y="56" text-anchor="middle"
+    font-family="'IBM Plex Mono',monospace" font-size="10" font-weight="600" fill="#93C5FD">Volcano / Kthena</text>
+
+  <!-- Org nodes Row 2 -->
+  <rect x="28" y="82" width="118" height="24" rx="3" fill="#0D1B2E" stroke="#2563EB" stroke-width="0.8"/>
+  <text x="87" y="98" text-anchor="middle"
+    font-family="'IBM Plex Mono',monospace" font-size="10" font-weight="600" fill="#93C5FD">KubeVirt</text>
+
+  <rect x="162" y="82" width="118" height="24" rx="3" fill="#0D1B2E" stroke="#2563EB" stroke-width="0.8"/>
+  <text x="221" y="98" text-anchor="middle"
+    font-family="'IBM Plex Mono',monospace" font-size="10" font-weight="600" fill="#93C5FD">Argo CD</text>
+
+  <!-- Port dots (right edge of each node) -->
+  <circle cx="146" cy="52" r="2.5" fill="#3B82F6"/>
+  <circle cx="280" cy="52" r="2.5" fill="#3B82F6"/>
+  <circle cx="146" cy="94" r="2.5" fill="#3B82F6"/>
+  <circle cx="280" cy="94" r="2.5" fill="#3B82F6"/>
+
+  <!-- Bezier edges -->
+  <path d="M 146,52 C 260,48 360,52 444,52"   stroke="#1D4ED8" stroke-width="1" fill="none" class="edge"/>
+  <path d="M 280,52 C 350,52 388,68 444,68"   stroke="#1D4ED8" stroke-width="1" fill="none" class="edge"/>
+  <path d="M 146,94 C 260,90 360,92 444,92"   stroke="#1D4ED8" stroke-width="1" fill="none" class="edge"/>
+  <path d="M 280,94 C 350,94 394,108 444,108" stroke="#1D4ED8" stroke-width="1" fill="none" class="edge"/>
+
+  <!-- Endpoint dots -->
+  <circle cx="444" cy="52"  r="2.5" fill="#3B82F6"/>
+  <circle cx="444" cy="68"  r="2.5" fill="#3B82F6"/>
+  <circle cx="444" cy="92"  r="2.5" fill="#3B82F6"/>
+  <circle cx="444" cy="108" r="2.5" fill="#3B82F6"/>
+
+  <!-- Repo labels -->
+  <text x="452" y="56"  font-family="'IBM Plex Mono',monospace" font-size="10" fill="#60A5FA">kubeflow/notebooks</text>
+  <text x="452" y="72"  font-family="'IBM Plex Mono',monospace" font-size="10" fill="#60A5FA">volcano-sh/kthena</text>
+  <text x="452" y="96"  font-family="'IBM Plex Mono',monospace" font-size="10" fill="#60A5FA">kubevirt/kubevirt</text>
+  <text x="452" y="112" font-family="'IBM Plex Mono',monospace" font-size="10" fill="#60A5FA">argoproj/argo-cd</text>
+
+  <!-- Domain labels -->
+  <text x="588" y="56"  font-family="'IBM Plex Mono',monospace" font-size="10" fill="#475569">notebook infrastructure</text>
+  <text x="588" y="72"  font-family="'IBM Plex Mono',monospace" font-size="10" fill="#475569">AI inference routing</text>
+  <text x="588" y="96"  font-family="'IBM Plex Mono',monospace" font-size="10" fill="#475569">Kubernetes CI infra</text>
+  <text x="588" y="112" font-family="'IBM Plex Mono',monospace" font-size="10" fill="#475569">GitOps interfaces</text>
+
+  <!-- Transit separator -->
+  <line x1="20" y1="152" x2="880" y2="152" stroke="#1E293B" stroke-width="1"/>
+  <text x="24" y="164"
+    font-family="'IBM Plex Mono',monospace"
+    font-size="9" fill="#10B981" letter-spacing="1.8">TRANSIT INFRASTRUCTURE</text>
+
+  <!-- Transit org node -->
+  <rect x="20" y="171" width="118" height="24" rx="3" fill="#042F2A" stroke="#065F46" stroke-width="0.8"/>
+  <text x="79" y="187" text-anchor="middle"
+    font-family="'IBM Plex Mono',monospace" font-size="10" font-weight="600" fill="#6EE7B7">OneBusAway</text>
+
+  <!-- Transit edge -->
+  <circle cx="138" cy="183" r="2.5" fill="#10B981"/>
+  <line x1="138" y1="183" x2="444" y2="183" stroke="#065F46" stroke-width="1" class="edge"/>
+  <circle cx="444" cy="183" r="2.5" fill="#10B981"/>
+
+  <!-- Transit repo + domain -->
+  <text x="452" y="187" font-family="'IBM Plex Mono',monospace" font-size="10" fill="#34D399">OneBusAway/watchdog</text>
+  <text x="588" y="187" font-family="'IBM Plex Mono',monospace" font-size="10" fill="#475569">transit telemetry</text>
+</svg>

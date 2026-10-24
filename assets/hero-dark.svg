@@ -1,102 +1,101 @@
-<svg viewBox="0 0 900 300" xmlns="http://www.w3.org/2000/svg" width="900" height="300">
-  <rect width="900" height="300" fill="#0D1117"/>
+<svg viewBox="0 0 900 360" xmlns="http://www.w3.org/2000/svg" width="900" height="360">
   <defs>
-    <pattern id="g" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
-      <circle cx="1" cy="1" r="0.7" fill="#1C2128"/>
+    <style>
+      @keyframes hueShift {
+        0%   { filter: hue-rotate(0deg)   brightness(1.05); }
+        100% { filter: hue-rotate(360deg) brightness(1.05); }
+      }
+      @keyframes pulse {
+        0%, 100% { opacity: 0.82; }
+        50%       { opacity: 1; }
+      }
+      .pf { animation: hueShift 9s linear infinite; }
+      .ol { animation: pulse 3s ease-in-out infinite; }
+    </style>
+
+    <!-- Subtle dot texture -->
+    <pattern id="dt" x="0" y="0" width="14" height="14" patternUnits="userSpaceOnUse">
+      <circle cx="1" cy="1" r="0.7" fill="#1A1A2E" opacity="0.55"/>
     </pattern>
+
+    <!-- Pokémon-inspired rainbow gradient (each letter shows a different type color) -->
+    <linearGradient id="pg" x1="0" y1="0" x2="1" y2="0.3" gradientUnits="objectBoundingBox">
+      <stop offset="0%"    stop-color="#FFD700"/>   <!-- Pikachu electric -->
+      <stop offset="14%"   stop-color="#FF4500"/>   <!-- Charizard fire -->
+      <stop offset="28%"   stop-color="#DA70D6"/>   <!-- Gengar psychic -->
+      <stop offset="42%"   stop-color="#00BFFF"/>   <!-- Vaporeon water -->
+      <stop offset="56%"   stop-color="#32CD32"/>   <!-- Bulbasaur grass -->
+      <stop offset="70%"   stop-color="#FF69B4"/>   <!-- Clefairy fairy -->
+      <stop offset="84%"   stop-color="#FF8C00"/>   <!-- Flareon fire -->
+      <stop offset="100%"  stop-color="#FFD700"/>   <!-- back to electric -->
+    </linearGradient>
+
+    <!-- Letter clip path -->
+    <clipPath id="lc">
+      <text x="450" y="246"
+        text-anchor="middle"
+        font-family="Impact,'Arial Narrow','Arial Black',Arial,sans-serif"
+        font-size="175" font-weight="900"
+        textLength="834" lengthAdjust="spacingAndGlyphs">SOUMADIP</text>
+    </clipPath>
   </defs>
-  <rect width="900" height="300" fill="url(#g)"/>
-  <rect x="0" y="0" width="3" height="300" fill="#2563EB"/>
 
-  <text x="24" y="50"
-    font-family="'IBM Plex Mono','SFMono-Regular','Consolas',monospace"
-    font-size="28" font-weight="700" fill="#E6EDF3" letter-spacing="2">SOUMADIP PATRA</text>
-  <text x="26" y="70"
-    font-family="'IBM Plex Sans','-apple-system','BlinkMacSystemFont',sans-serif"
-    font-size="13" fill="#8B949E" letter-spacing="0.3">Cloud-Native &amp; AI Systems Engineering</text>
-  <text x="26" y="89"
-    font-family="'IBM Plex Mono',monospace"
-    font-size="11" fill="#4D5562">Contributing to CNCF, Kubernetes, and transit open source</text>
-  <line x1="24" y1="101" x2="876" y2="101" stroke="#21262D" stroke-width="1"/>
+  <!-- Base background -->
+  <rect width="900" height="360" fill="#060810"/>
 
-  <!-- CNCF label -->
-  <text x="24" y="118"
-    font-family="'IBM Plex Mono',monospace"
-    font-size="9" fill="#3B82F6" letter-spacing="1.5">CNCF · KUBERNETES ECOSYSTEM</text>
+  <!-- Dot texture -->
+  <rect width="900" height="360" fill="url(#dt)"/>
 
-  <!-- CNCF backbone spine: x=50, y=138 to y=222 -->
-  <line x1="50" y1="138" x2="50" y2="222" stroke="#3B82F6" stroke-width="1.5" stroke-opacity="0.35"/>
+  <!-- Manga-inspired diagonal composition: dark angular slabs at top and bottom -->
+  <polygon points="0,0 900,0 900,54 0,108" fill="#0A0C1A" opacity="0.75"/>
+  <polygon points="0,252 900,198 900,360 0,360" fill="#0A0C1A" opacity="0.75"/>
 
-  <!-- Row 1: Kubeflow (y_top=126, y_mid=138) -->
-  <circle cx="50" cy="138" r="3.5" fill="#3B82F6"/>
-  <line x1="53" y1="138" x2="82" y2="138" stroke="#3B82F6" stroke-width="1" stroke-opacity="0.4"/>
-  <rect x="84" y="126" width="138" height="24" rx="2" fill="#0D1B2E" stroke="#1C3A5C" stroke-width="1"/>
-  <text x="153" y="142" text-anchor="middle"
-    font-family="'IBM Plex Mono',monospace" font-size="11" font-weight="600" fill="#C9D1D9">Kubeflow</text>
-  <line x1="222" y1="138" x2="252" y2="138" stroke="#30363D" stroke-width="1"/>
-  <text x="256" y="142"
-    font-family="'IBM Plex Mono',monospace" font-size="10" fill="#58A6FF">kubeflow/notebooks</text>
-  <line x1="390" y1="138" x2="410" y2="138" stroke="#30363D" stroke-width="1"/>
-  <text x="414" y="142"
-    font-family="'IBM Plex Mono',monospace" font-size="10" fill="#6E7681">Kubernetes notebook infrastructure</text>
+  <!-- Speed lines radiating from center (450, 180) — manga kinetic energy -->
+  <g stroke="#D0D8FF" stroke-width="0.7" opacity="0.045">
+    <line x1="450" y1="180" x2="900" y2="180"/>
+    <line x1="450" y1="180" x2="885" y2="360"/>
+    <line x1="450" y1="180" x2="630" y2="360"/>
+    <line x1="450" y1="180" x2="498" y2="360"/>
+    <line x1="450" y1="180" x2="450" y2="360"/>
+    <line x1="450" y1="180" x2="402" y2="360"/>
+    <line x1="450" y1="180" x2="270" y2="360"/>
+    <line x1="450" y1="180" x2="15"  y2="360"/>
+    <line x1="450" y1="180" x2="0"   y2="180"/>
+    <line x1="450" y1="180" x2="15"  y2="0"/>
+    <line x1="450" y1="180" x2="270" y2="0"/>
+    <line x1="450" y1="180" x2="402" y2="0"/>
+    <line x1="450" y1="180" x2="450" y2="0"/>
+    <line x1="450" y1="180" x2="498" y2="0"/>
+    <line x1="450" y1="180" x2="630" y2="0"/>
+    <line x1="450" y1="180" x2="885" y2="0"/>
+  </g>
 
-  <!-- Row 2: Volcano/Kthena (y_top=154, y_mid=166) -->
-  <circle cx="50" cy="166" r="3.5" fill="#3B82F6"/>
-  <line x1="53" y1="166" x2="82" y2="166" stroke="#3B82F6" stroke-width="1" stroke-opacity="0.4"/>
-  <rect x="84" y="154" width="138" height="24" rx="2" fill="#0D1B2E" stroke="#1C3A5C" stroke-width="1"/>
-  <text x="153" y="170" text-anchor="middle"
-    font-family="'IBM Plex Mono',monospace" font-size="11" font-weight="600" fill="#C9D1D9">Volcano / Kthena</text>
-  <line x1="222" y1="166" x2="252" y2="166" stroke="#30363D" stroke-width="1"/>
-  <text x="256" y="170"
-    font-family="'IBM Plex Mono',monospace" font-size="10" fill="#58A6FF">volcano-sh/kthena</text>
-  <line x1="390" y1="166" x2="410" y2="166" stroke="#30363D" stroke-width="1"/>
-  <text x="414" y="170"
-    font-family="'IBM Plex Mono',monospace" font-size="10" fill="#6E7681">AI inference routing</text>
+  <!-- Dense inner speed lines for depth -->
+  <g stroke="#D0D8FF" stroke-width="0.4" opacity="0.022">
+    <line x1="450" y1="180" x2="900" y2="90"/>
+    <line x1="450" y1="180" x2="900" y2="270"/>
+    <line x1="450" y1="180" x2="757" y2="360"/>
+    <line x1="450" y1="180" x2="564" y2="360"/>
+    <line x1="450" y1="180" x2="336" y2="360"/>
+    <line x1="450" y1="180" x2="143" y2="360"/>
+    <line x1="450" y1="180" x2="0"   y2="270"/>
+    <line x1="450" y1="180" x2="0"   y2="90"/>
+    <line x1="450" y1="180" x2="143" y2="0"/>
+    <line x1="450" y1="180" x2="336" y2="0"/>
+    <line x1="450" y1="180" x2="564" y2="0"/>
+    <line x1="450" y1="180" x2="757" y2="0"/>
+  </g>
 
-  <!-- Row 3: KubeVirt (y_top=182, y_mid=194) -->
-  <circle cx="50" cy="194" r="3.5" fill="#3B82F6"/>
-  <line x1="53" y1="194" x2="82" y2="194" stroke="#3B82F6" stroke-width="1" stroke-opacity="0.4"/>
-  <rect x="84" y="182" width="138" height="24" rx="2" fill="#0D1B2E" stroke="#1C3A5C" stroke-width="1"/>
-  <text x="153" y="198" text-anchor="middle"
-    font-family="'IBM Plex Mono',monospace" font-size="11" font-weight="600" fill="#C9D1D9">KubeVirt</text>
-  <line x1="222" y1="194" x2="252" y2="194" stroke="#30363D" stroke-width="1"/>
-  <text x="256" y="198"
-    font-family="'IBM Plex Mono',monospace" font-size="10" fill="#58A6FF">kubevirt/kubevirt</text>
-  <line x1="390" y1="194" x2="410" y2="194" stroke="#30363D" stroke-width="1"/>
-  <text x="414" y="198"
-    font-family="'IBM Plex Mono',monospace" font-size="10" fill="#6E7681">Kubernetes CI infrastructure</text>
+  <!-- Pokémon rainbow fill clipped to letter shapes -->
+  <rect x="0" y="0" width="900" height="360"
+    fill="url(#pg)" clip-path="url(#lc)" class="pf"/>
 
-  <!-- Row 4: Argo CD (y_top=210, y_mid=222) -->
-  <circle cx="50" cy="222" r="3.5" fill="#3B82F6"/>
-  <line x1="53" y1="222" x2="82" y2="222" stroke="#3B82F6" stroke-width="1" stroke-opacity="0.4"/>
-  <rect x="84" y="210" width="138" height="24" rx="2" fill="#0D1B2E" stroke="#1C3A5C" stroke-width="1"/>
-  <text x="153" y="226" text-anchor="middle"
-    font-family="'IBM Plex Mono',monospace" font-size="11" font-weight="600" fill="#C9D1D9">Argo CD</text>
-  <line x1="222" y1="222" x2="252" y2="222" stroke="#30363D" stroke-width="1"/>
-  <text x="256" y="226"
-    font-family="'IBM Plex Mono',monospace" font-size="10" fill="#58A6FF">argoproj/argo-cd</text>
-  <line x1="390" y1="222" x2="410" y2="222" stroke="#30363D" stroke-width="1"/>
-  <text x="414" y="226"
-    font-family="'IBM Plex Mono',monospace" font-size="10" fill="#6E7681">GitOps interfaces</text>
-
-  <!-- Transit separator -->
-  <line x1="24" y1="244" x2="876" y2="244" stroke="#21262D" stroke-width="1"/>
-
-  <!-- Transit label -->
-  <text x="24" y="257"
-    font-family="'IBM Plex Mono',monospace"
-    font-size="9" fill="#10B981" letter-spacing="1.5">TRANSIT INFRASTRUCTURE</text>
-
-  <!-- Row 5: OneBusAway (y_top=265, y_mid=277) -->
-  <circle cx="50" cy="277" r="3.5" fill="#10B981"/>
-  <line x1="53" y1="277" x2="82" y2="277" stroke="#10B981" stroke-width="1" stroke-opacity="0.4"/>
-  <rect x="84" y="265" width="138" height="24" rx="2" fill="#0A1F12" stroke="#163A1E" stroke-width="1"/>
-  <text x="153" y="281" text-anchor="middle"
-    font-family="'IBM Plex Mono',monospace" font-size="11" font-weight="600" fill="#C9D1D9">OneBusAway</text>
-  <line x1="222" y1="277" x2="252" y2="277" stroke="#30363D" stroke-width="1"/>
-  <text x="256" y="281"
-    font-family="'IBM Plex Mono',monospace" font-size="10" fill="#3FB950">OneBusAway/watchdog</text>
-  <line x1="390" y1="277" x2="410" y2="277" stroke="#30363D" stroke-width="1"/>
-  <text x="414" y="281"
-    font-family="'IBM Plex Mono',monospace" font-size="10" fill="#6E7681">Transit telemetry and observability</text>
+  <!-- Letter outline — crisp white, Marvel-title definition -->
+  <text x="450" y="246"
+    text-anchor="middle"
+    font-family="Impact,'Arial Narrow','Arial Black',Arial,sans-serif"
+    font-size="175" font-weight="900"
+    textLength="834" lengthAdjust="spacingAndGlyphs"
+    fill="none" stroke="#FFFFFF" stroke-width="1.5"
+    class="ol">SOUMADIP</text>
 </svg>

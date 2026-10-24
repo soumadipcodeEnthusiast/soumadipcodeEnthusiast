@@ -1,0 +1,87 @@
+<svg viewBox="0 0 900 330" xmlns="http://www.w3.org/2000/svg" width="900" height="330">
+  <rect width="100%" height="100%" fill="#0D1117"/>
+  <defs>
+    <pattern id="dp" x="0" y="0" width="14" height="14" patternUnits="userSpaceOnUse">
+      <circle cx="1" cy="1" r="0.55" fill="#1C2128" opacity="0.8"/>
+    </pattern>
+  </defs>
+  <rect width="100%" height="100%" fill="url(#dp)"/>
+
+  <!-- Org badges -->
+  <rect x="24" y="24" width="108" height="26" rx="13" fill="#161B22" stroke="#30363D" stroke-width="1"/>
+  <circle cx="38" cy="37" r="4" fill="#238636"/>
+  <text x="48" y="41" font-family="'SFMono-Regular',Consolas,monospace" font-size="11" fill="#E6EDF3">@kubeflow</text>
+
+  <rect x="140" y="24" width="120" height="26" rx="13" fill="#161B22" stroke="#30363D" stroke-width="1"/>
+  <circle cx="154" cy="37" r="4" fill="#238636"/>
+  <text x="164" y="41" font-family="'SFMono-Regular',Consolas,monospace" font-size="11" fill="#E6EDF3">@volcano-sh</text>
+
+  <rect x="268" y="24" width="104" height="26" rx="13" fill="#161B22" stroke="#30363D" stroke-width="1"/>
+  <circle cx="282" cy="37" r="4" fill="#238636"/>
+  <text x="292" y="41" font-family="'SFMono-Regular',Consolas,monospace" font-size="11" fill="#E6EDF3">@kubevirt</text>
+
+  <rect x="380" y="24" width="102" height="26" rx="13" fill="#161B22" stroke="#30363D" stroke-width="1"/>
+  <circle cx="394" cy="37" r="4" fill="#238636"/>
+  <text x="404" y="41" font-family="'SFMono-Regular',Consolas,monospace" font-size="11" fill="#E6EDF3">@argoproj</text>
+
+  <rect x="490" y="24" width="130" height="26" rx="13" fill="#161B22" stroke="#30363D" stroke-width="1"/>
+  <circle cx="504" cy="37" r="4" fill="#238636"/>
+  <text x="514" y="41" font-family="'SFMono-Regular',Consolas,monospace" font-size="11" fill="#E6EDF3">@OneBusAway</text>
+
+  <!-- Divider -->
+  <line x1="24" y1="64" x2="876" y2="64" stroke="#21262D" stroke-width="1"/>
+
+  <!-- Left column heading -->
+  <text x="24" y="93" font-family="'SFMono-Regular',Consolas,monospace" font-size="13" font-weight="700" fill="#E6EDF3">Activity overview</text>
+  <text x="24" y="113" font-family="'SFMono-Regular',Consolas,monospace" font-size="11" fill="#8B949E">Contributed to</text>
+
+  <!-- Repo list -->
+  <circle cx="30" cy="131" r="3.5" fill="#238636"/>
+  <text x="42" y="135" font-family="'SFMono-Regular',Consolas,monospace" font-size="11" fill="#58A6FF">kubeflow/notebooks</text>
+  <circle cx="30" cy="155" r="3.5" fill="#238636"/>
+  <text x="42" y="159" font-family="'SFMono-Regular',Consolas,monospace" font-size="11" fill="#58A6FF">volcano-sh/kthena</text>
+  <circle cx="30" cy="179" r="3.5" fill="#238636"/>
+  <text x="42" y="183" font-family="'SFMono-Regular',Consolas,monospace" font-size="11" fill="#58A6FF">kubevirt/kubevirt</text>
+  <circle cx="30" cy="203" r="3.5" fill="#238636"/>
+  <text x="42" y="207" font-family="'SFMono-Regular',Consolas,monospace" font-size="11" fill="#58A6FF">argoproj/argo-cd</text>
+  <circle cx="30" cy="227" r="3.5" fill="#238636"/>
+  <text x="42" y="231" font-family="'SFMono-Regular',Consolas,monospace" font-size="11" fill="#58A6FF">OneBusAway/watchdog</text>
+
+  <!-- Placeholder note -->
+  <text x="24" y="322" font-family="'SFMono-Regular',Consolas,monospace" font-size="9" fill="#484F58">Placeholder — will be replaced by GitHub Actions on first run · denominator: commits+PRs+issues+reviews (current contribution year)</text>
+
+  <!-- Vertical divider -->
+  <line x1="454" y1="80" x2="454" y2="308" stroke="#21262D" stroke-width="1"/>
+
+  <!-- Right column: radar -->
+  <text x="676" y="93" text-anchor="middle" font-family="'SFMono-Regular',Consolas,monospace" font-size="11" fill="#8B949E">Contribution types</text>
+
+  <!-- Radar background rings -->
+  <circle cx="676" cy="196" r="82" fill="none" stroke="#21262D" stroke-width="0.8"/>
+  <circle cx="676" cy="196" r="61.5" fill="none" stroke="#21262D" stroke-width="0.8"/>
+  <circle cx="676" cy="196" r="41" fill="none" stroke="#21262D" stroke-width="0.8"/>
+  <circle cx="676" cy="196" r="20.5" fill="none" stroke="#21262D" stroke-width="0.8"/>
+
+  <!-- Axes -->
+  <line x1="676" y1="196" x2="676" y2="114" stroke="#21262D" stroke-width="0.8"/>
+  <line x1="676" y1="196" x2="758" y2="196" stroke="#21262D" stroke-width="0.8"/>
+  <line x1="676" y1="196" x2="676" y2="278" stroke="#21262D" stroke-width="0.8"/>
+  <line x1="676" y1="196" x2="594" y2="196" stroke="#21262D" stroke-width="0.8"/>
+
+  <!-- Placeholder polygon (update once Actions runs) -->
+  <polygon points="676,134 733,196 676,258 619,196" fill="#238636" fill-opacity="0.22" stroke="#2EA043" stroke-width="1.5"/>
+  <circle cx="676" cy="134" r="4" fill="#2EA043" stroke="#0D1117" stroke-width="1.5"/>
+  <circle cx="733" cy="196" r="4" fill="#2EA043" stroke="#0D1117" stroke-width="1.5"/>
+  <circle cx="676" cy="258" r="4" fill="#2EA043" stroke="#0D1117" stroke-width="1.5"/>
+  <circle cx="619" cy="196" r="4" fill="#2EA043" stroke="#0D1117" stroke-width="1.5"/>
+
+  <!-- Axis labels -->
+  <text x="676" y="100" text-anchor="middle" font-family="'SFMono-Regular',Consolas,monospace" font-size="10" fill="#8B949E">Commits</text>
+  <text x="676" y="112" text-anchor="middle" font-family="'SFMono-Regular',Consolas,monospace" font-size="11" font-weight="700" fill="#2EA043">—%</text>
+  <text x="778" y="196" text-anchor="start" font-family="'SFMono-Regular',Consolas,monospace" font-size="10" fill="#8B949E">Pull Requests</text>
+  <text x="778" y="209" text-anchor="start" font-family="'SFMono-Regular',Consolas,monospace" font-size="11" font-weight="700" fill="#2EA043">—%</text>
+  <text x="676" y="302" text-anchor="middle" font-family="'SFMono-Regular',Consolas,monospace" font-size="10" fill="#8B949E">Issues</text>
+  <text x="676" y="314" text-anchor="middle" font-family="'SFMono-Regular',Consolas,monospace" font-size="11" font-weight="700" fill="#2EA043">—%</text>
+  <text x="586" y="196" text-anchor="end" font-family="'SFMono-Regular',Consolas,monospace" font-size="10" fill="#8B949E">Reviews</text>
+  <text x="586" y="209" text-anchor="end" font-family="'SFMono-Regular',Consolas,monospace" font-size="11" font-weight="700" fill="#2EA043">—%</text>
+</svg>

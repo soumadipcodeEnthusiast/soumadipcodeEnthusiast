@@ -1,0 +1,45 @@
+name: Update Activity SVG
+
+on:
+  schedule:
+    # 04:30 UTC daily — after GitHub's nightly contribution graph refresh
+    - cron: '30 4 * * *'
+  workflow_dispatch:   # allow manual trigger from the Actions tab
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: pip install --quiet requests
+
+      - name: Generate activity SVG
+        env:
+          GITHUB_TOKEN: ${{ secrets.ACTIVITY_TOKEN }}
+          GITHUB_USERNAME: soumadipcodeEnthusiast
+        run: python scripts/generate_activity.py
+
+      - name: Commit if SVG changed
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add assets/activity.svg
+          if git diff --cached --quiet; then
+            echo "No changes — SVG is up to date."
+          else
+            git commit -m "chore: update activity SVG [skip ci]"
+            git push
+          fi
