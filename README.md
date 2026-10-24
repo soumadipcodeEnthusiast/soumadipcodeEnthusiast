@@ -1,12 +1,4 @@
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/hero-dark.svg">
-  <img src="assets/hero-light.svg" alt="Soumadip Patra" width="100%">
-</picture>
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/orgs-dark.svg">
-  <img src="assets/orgs-light.svg" alt="Open source organization contributions" width="100%">
-</picture>
+<img src="assets/hero.png" alt="SOUMADIP" width="100%">
 
 <br>
 
