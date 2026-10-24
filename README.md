@@ -2,36 +2,46 @@
 
 <br>
 
-Cloud-native infrastructure engineer contributing to the CNCF ecosystem and transit open source.
+Cloud-native infrastructure engineer contributing to the CNCF ecosystem and transit open source. Work spans Kubernetes, AI inference, GitOps, and real-time telemetry.
 
-## Open Source
+## Open Source Contributions
 
-| Org | Repo | Area |
+| Org | Repo | Focus |
 |---|---|---|
-| [Kubeflow](https://github.com/kubeflow) | [`kubeflow/notebooks`](https://github.com/kubeflow/notebooks) | Kubernetes notebook infrastructure · `TypeScript` `React` |
-| [Volcano / Kthena](https://github.com/volcano-sh) | [`volcano-sh/kthena`](https://github.com/volcano-sh/kthena) | AI inference routing · `Go` |
-| [KubeVirt](https://github.com/kubevirt) | [`kubevirt/kubevirt`](https://github.com/kubevirt/kubevirt) | Kubernetes CI infrastructure · `Go` |
-| [Argo CD](https://github.com/argoproj) | [`argoproj/argo-cd`](https://github.com/argoproj/argo-cd) | GitOps interfaces · `TypeScript` `React` |
-| [OneBusAway](https://github.com/OneBusAway) | [`OneBusAway/watchdog`](https://github.com/OneBusAway/watchdog) | Transit telemetry · `Go` `Prometheus` |
+| [Kubeflow](https://github.com/kubeflow) · CNCF | [`kubeflow/notebooks`](https://github.com/kubeflow/notebooks) | Workspace lifecycle, namespace-scoped deletion, PVC validation · `TypeScript` `React` |
+| [Volcano / Kthena](https://github.com/volcano-sh) · CNCF | [`volcano-sh/kthena`](https://github.com/volcano-sh/kthena) | Error propagation and request handling in AI inference router · `Go` |
+| [KubeVirt](https://github.com/kubevirt) · CNCF | [`kubevirt/kubevirt`](https://github.com/kubevirt/kubevirt) | CI test infrastructure and SIG naming conventions · `Go` |
+| [Argo CD](https://github.com/argoproj) · CNCF | [`argoproj/argo-cd`](https://github.com/argoproj/argo-cd) | Pod log viewer UI — highlight state and stale-reset behavior · `TypeScript` `React` |
+| [OneBusAway](https://github.com/OneBusAway) | [`OneBusAway/watchdog`](https://github.com/OneBusAway/watchdog) | Vehicle attribution and metrics cardinality for GTFS-RT feeds · `Go` `Prometheus` |
 
 ## Projects
 
-**[AI-Driven Event Processing System](https://github.com/soumadipcodeEnthusiast/ai-driven-event-processing-system)** — Real-time anomaly detection, failure forecasting, and GraphRAG-powered remediation on a Kafka backbone. AWS EKS · Terraform · Jenkins · 11 ADRs.
-`Java 17` `Spring Boot` `Apache Kafka` `Neo4j` `PyTorch` `AWS EKS` `Terraform`
+[AI-Driven Event Processing System](https://github.com/soumadipcodeEnthusiast/ai-driven-event-processing-system)
+Real-time anomaly detection, TFT-based failure forecasting, and GraphRAG-powered remediation playbooks across four independent paths on a shared Kafka backbone. Deployed on AWS EKS via Terraform with a Jenkins CI pipeline and 11 architecture decision records.
+`Java 17` `Spring Boot` `Apache Kafka` `Neo4j` `PyTorch` `Ollama` `AWS EKS` `Terraform` `Prometheus`
 
-**[AKTE](https://github.com/soumadipcodeEnthusiast/AKTE-Adaptive-AI-for-Personalized-Knowledge-Transformation)** — Top 4 / ~500 teams, AWS AI for Bharat Hackathon. Two-phase LLM pipeline for personalized study companions via Amazon Bedrock.
-`Amazon Bedrock` `RAG` `Python`
+[AKTE — Adaptive Knowledge & Teaching Engine](https://github.com/soumadipcodeEnthusiast/AKTE-Adaptive-AI-for-Personalized-Knowledge-Transformation)
+Top 4 of ~500 teams at AWS AI for Bharat Hackathon. Two-phase LLM pipeline that converts PDFs into personalized study companions using Amazon Bedrock.
+`Amazon Bedrock` `RAG` `Python` `AWS`
 
-**[FreeRTOS Scheduler](https://github.com/soumadipcodeEnthusiast/RTOSPROJECT)** — Preemptive and round-robin scheduling on constrained embedded hardware.
+[FreeRTOS Scheduler](https://github.com/soumadipcodeEnthusiast/RTOSPROJECT)
+Preemptive priority and round-robin scheduling on constrained embedded hardware — context switching and real-time task management at the system level.
 `C` `FreeRTOS`
 
-**[AWS Serverless Event Pipeline](https://github.com/soumadipcodeEnthusiast/shopify-demo-with-aws-pipeline)** — Cognito → SQS → SNS → Step Functions → Lambda.
-`AWS Lambda` `Step Functions` `SQS` `SNS`
+[AWS Serverless Event Pipeline](https://github.com/soumadipcodeEnthusiast/shopify-demo-with-aws-pipeline)
+End-to-end serverless pipeline: Cognito → SQS → SNS → Step Functions → Lambda.
+`AWS Lambda` `Step Functions` `SQS` `SNS` `Cognito`
 
 ## Stack
 
-`Go` `Python` `Java` `TypeScript` · `Kubernetes` `Kafka` `AWS` `Terraform` `Prometheus` `Grafana` · `RAG` `GraphRAG` `PyTorch`
+| | |
+|---|---|
+| Languages | `Go` `Python` `Java` `TypeScript` `C` |
+| Cloud Native | `Kubernetes` `Helm` `Kubeflow` `Argo CD` `KubeVirt` |
+| Data & Messaging | `Apache Kafka` `Redis` `PostgreSQL` |
+| AI / ML | `Amazon Bedrock` `RAG` `GraphRAG` `PyTorch` `Ollama` |
+| Infrastructure | `AWS` `Terraform` `Jenkins` `Prometheus` `Grafana` |
 
 ---
 
-Active: [argoproj/argo-cd](https://github.com/argoproj/argo-cd) · [kubeflow/trainer](https://github.com/kubeflow/trainer) · [volcano-sh/volcano](https://github.com/volcano-sh/volcano)
+Currently active on [argoproj/argo-cd](https://github.com/argoproj/argo-cd) · [kubeflow/trainer](https://github.com/kubeflow/trainer) · [volcano-sh/volcano](https://github.com/volcano-sh/volcano)
