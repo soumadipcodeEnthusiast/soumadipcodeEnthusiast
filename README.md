@@ -10,8 +10,6 @@ Cloud-native infrastructure engineer contributing to the CNCF ecosystem and tran
 |---|---|---|
 | [Kubeflow](https://github.com/kubeflow) · CNCF | [`kubeflow/notebooks`](https://github.com/kubeflow/notebooks) | Workspace lifecycle, namespace-scoped deletion, PVC validation · `TypeScript` `React` |
 | [Volcano / Kthena](https://github.com/volcano-sh) · CNCF | [`volcano-sh/kthena`](https://github.com/volcano-sh/kthena) | Error propagation and request handling in AI inference router · `Go` |
-| [KubeVirt](https://github.com/kubevirt) · CNCF | [`kubevirt/kubevirt`](https://github.com/kubevirt/kubevirt) | CI test infrastructure and SIG naming conventions · `Go` |
-| [Argo CD](https://github.com/argoproj) · CNCF | [`argoproj/argo-cd`](https://github.com/argoproj/argo-cd) | Pod log viewer UI — highlight state and stale-reset behavior · `TypeScript` `React` |
 | [OneBusAway](https://github.com/OneBusAway) | [`OneBusAway/watchdog`](https://github.com/OneBusAway/watchdog) | Vehicle attribution and metrics cardinality for GTFS-RT feeds · `Go` `Prometheus` |
 
 ## Projects
@@ -43,5 +41,4 @@ End-to-end serverless pipeline: Cognito → SQS → SNS → Step Functions → L
 | Infrastructure | `AWS` `Terraform` `Jenkins` `Prometheus` `Grafana` |
 
 ---
-
-Currently active on [argoproj/argo-cd](https://github.com/argoproj/argo-cd) · [kubeflow/trainer](https://github.com/kubeflow/trainer) · [volcano-sh/volcano](https://github.com/volcano-sh/volcano)
+ [kubeflow/trainer](https://github.com/kubeflow/trainer) · [volcano-sh/volcano](https://github.com/volcano-sh/volcano)
