@@ -2,11 +2,6 @@
 
 <br>
 
-<!-- Activity overview (auto-updated daily by GitHub Actions) -->
-<img src="assets/activity.svg" alt="Open source activity overview" width="100%">
-
-<br>
-
 Contributing to cloud-native infrastructure across the CNCF ecosystem and transit open source. Work spans Kubernetes notebook infrastructure, AI inference routing, GitOps interfaces, virtualization CI, and real-time transit telemetry. Personal engineering practice centers on distributed systems with Kafka, Kubernetes, and AI inference.
 
 ---
